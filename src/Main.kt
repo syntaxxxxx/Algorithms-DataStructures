@@ -1,12 +1,10 @@
 fun main() {
     val names = listOf("Fiqri", "Kece", "Ganteng", "Sekali")
-    checkFirst(names)
+    printNames(names)
 }
 
-fun checkFirst(names: List<String>) {
-    if (names.firstOrNull() != null) {
-        println(names.first())
-    } else {
-        println("No Names")
+fun printNames(names: List<String>) {
+    for (name in names) {
+        println(name)
     }
 }
